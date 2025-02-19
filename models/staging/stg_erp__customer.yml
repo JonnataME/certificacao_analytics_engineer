@@ -1,0 +1,23 @@
+models:
+  - name: stg_erp__customer
+    description: Tabela staging com os cadastros de clientes.
+    columns:
+      - name: customer_uid
+        description: Identificador único do Cliente.
+        data_tests: ['unique', 'not_null']
+
+      - name: person_uid
+        description: Identificador único de pessoa.
+
+      - name: store_uid
+        description: Identificador único de loja.
+
+      - name: territory_uid
+        description: Identificador único do territorio.
+
+      - name: customer_id
+        description: Identificador natural de cliente.
+        data_tests: ['unique', 'not_null']
+
+      - name: customer_type
+        description: Descrição com o tipo do cliente, podendo ser individual ou loja.

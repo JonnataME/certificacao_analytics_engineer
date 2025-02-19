@@ -1,0 +1,13 @@
+models:
+  - name: stg_erp__store
+    description: Tabela staging com os cadastros das lojas
+    columns:
+      - name: store_uid
+        description: Identificador único da loja.
+        data_tests: ['unique', 'not_null']
+
+      - name: store_id
+        description: Identificador natural da loja.
+
+      - name: store_name
+        description: Descrição com o nome da loja.

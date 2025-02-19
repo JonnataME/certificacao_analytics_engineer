@@ -1,0 +1,20 @@
+models:
+  - name: stg_erp__address
+    description: Tabela staging com os cadastros de endereços.
+    columns:
+      - name: address_uid
+        description: Identificador único do endereço.
+        data_tests: ['unique', 'not_null']
+
+      - name: state_province_uid
+        description: Identificador único do estado.
+
+      - name: address_id
+        description: Identificador natural do endereço.
+        data_tests: ['unique', 'not_null']
+
+      - name: postal_code
+        description: Identificador do codigo postal.
+
+      - name: city_name
+        description: Descrição com o nome da cidade.

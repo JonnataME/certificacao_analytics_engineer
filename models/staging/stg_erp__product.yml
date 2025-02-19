@@ -1,0 +1,25 @@
+models:
+  - name: stg_erp__product
+    description: Tabela staging com os cadastros do produtos.
+    columns:
+      - name: product_uid
+        description: Identificador único do produto.
+        data_tests: ['unique', 'not_null']
+
+      - name: product_model_uid
+        description: Identificador único do modelo do produto.
+
+      - name: product_subcategory_uid
+        description: Identificado único da subcategoria do produto.
+
+      - name: product_id
+        description: Identificador natural do produto.
+
+      - name: product_class
+        description: Descrição da classe de produto.
+
+      - name: product_name
+        description: Descrição de nome do produto.
+
+      - name: product_line
+        description: Descrição de linha de produto.
