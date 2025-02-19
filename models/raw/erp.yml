@@ -1,0 +1,21 @@
+sources:
+  - name: erp
+    description: Fonte da loja Adventure Works, com as tabelas relacionado ao evento de vendas, realiado aos clientes da loja, podendo ser clientes individuais ou outras lojas.
+    database: fea24_11
+    schema: raw_adventure_works
+    tables:
+      - name: address
+      - name: countryregion
+      - name: creditcard
+      - name: customer
+      - name: person
+      - name: product
+      - name: productcategory
+      - name: productmodel
+      - name: productsubcategory
+      - name: salesorderdetail
+      - name: salesorderheader
+      - name: salesorderheadersalesreason
+      - name: salesreason
+      - name: stateprovince
+      - name: store
