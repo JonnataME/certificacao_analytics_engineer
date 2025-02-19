@@ -1,0 +1,16 @@
+models:
+  - name: dim_customer
+    description: Dimensão de clientes, podendo ser cliente indivudual ou loja, podendo ser identificado pela coluna de tipo de cliente.
+    columns:
+      - name: customer_uid
+        description: Identificador único de Cliente.
+        data_tests: ['unique', 'not_null']
+
+      - name: customer_id
+        description: Identificador natural de Cliente.
+
+      - name: customer_type
+        description: Descrição de tipo de Cliente.
+
+      - name: customer_name
+        description: Descrição de nome do Cliente.
