@@ -1,0 +1,61 @@
+models:
+  - name: fct_sales
+    description: Tabela com eventos de pedido de venda do adventure works, a nível de venda e produto.
+    columns:
+      - name: sales_order_detail_uid
+        description: Identificador único detalhe do pedido de venda.
+        data_tests: ['unique', 'not_null']
+
+      - name: sales_order_uid
+        description:  Identificador único pedido de venda.
+
+      - name: sales_order_detail_id
+        description: Identificador natural do detalhe de pedido de venda.
+
+      - name: sales_order_id
+        description:  Identificador natural do pedido de venda.
+
+      - name: territory_uid
+        description: Identificador único do territorio.
+
+      - name: bill_to_address_uid
+        description: Identificador único fatura do endereço.
+
+      - name: ship_to_address_uid
+        description: Identificador único de envio para endereço.
+
+      - name: customer_uid
+        description: Identificador único de cliente.
+
+      - name: credit_card_uid
+        description: Identificador único cartão de credito.
+
+      - name: product_uid
+        description: Identificador único do Produto.
+
+      - name: order_date
+        description: Data do pedido.
+
+      - name: due_date
+        description: Data de vencimento.
+
+      - name: ship_date
+        description: Data de envio.
+
+      - name: online_order_flag
+        description: Descrição com a bandeira da venda.
+
+      - name: status_name
+        description: Descrição com o nome do status.
+
+      - name: order_qty
+        description: Quantidade de pedidos.
+
+      - name: unit_price
+        description: Valor do preço unitario.
+
+      - name: unit_price_discount
+        description: Valor de desconto do preço unitario
+
+      - name: total_value
+        description: Valor total da venda.

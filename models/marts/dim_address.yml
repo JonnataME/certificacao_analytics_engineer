@@ -1,0 +1,22 @@
+models:
+  - name: dim_address
+    description: Dimensão de endereço, com informações de código postal cidade e estado.
+    columns:
+      - name: address_uid
+        description: Identificador único do endereço.
+        data_tests: ['unique', 'not_null']
+
+      - name: address_id
+        description: Identificador natural do endereço.
+
+      - name: postal_code
+        description: Identificador do codigo postal.
+
+      - name: state_province_code
+        description: Descrição do codigo da provincia/estado.
+
+      - name: state_province_name
+        description: Descrição do nome da provincia/estado.
+
+      - name: city_name
+        description: Descrição com o nome da cidade.
