@@ -1,0 +1,16 @@
+models:
+  - name: stg_erp__sales_reason
+    description: Tabela staging com o cadastro de motivo de venda.
+    columns:
+      - name: sales_reason_uid
+        description: Identificador único do motivo de venda.
+        data_tests: ['unique', 'not_null']
+
+      - name: sales_reason_id
+        description: Identificador natural motivo de venda.
+
+      - name: reason_type
+        description: Descrição com o tipo de motivo de venda.
+
+      - name: reason_name
+        description: Descrição com o motivo de venda.

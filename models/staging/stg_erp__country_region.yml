@@ -1,0 +1,13 @@
+models:
+  - name: stg_erp__country_region
+    description: Tabela staging com o cadastros de paises.
+    columns:
+      - name: country_region_uid
+        description: Identificador único do pais.
+        data_tests: ['unique', 'not_null']
+
+      - name: country_region_code
+        description: Descrição com o codigo do pais.
+
+      - name: country_region_name
+        description: Descrição do nome do pais.

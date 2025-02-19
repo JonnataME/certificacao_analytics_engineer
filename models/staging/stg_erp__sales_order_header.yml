@@ -1,0 +1,49 @@
+models:
+  - name: stg_erp__sales_order_header
+    description: Tabela staging com o cabeçalho do pedido de venda.
+    columns:
+      - name: sales_order_uid
+        description: Identificador único do pedido de venda.
+        data_tests: ['unique', 'not_null']
+
+      - name: territory_uid
+        description: Identificador único do territorio.
+
+      - name: bill_to_address_uid
+        description: Identificador único fatura do endereço.
+
+      - name: ship_to_address_uid
+        description: Identificador único de envio para endereço.
+
+      - name: customer_uid
+        description: Identificador único de cliente.
+
+      - name: credit_card_uid
+        description: Identificador único de cartão de credito.
+
+      - name: sales_order_id
+        description: Identificador natural de pedido de venda.
+
+      - name: due_date
+        description: Data de vencimento.
+
+      - name: order_date
+        description: Data do pedido.
+
+      - name: ship_date
+        description: Data do envio.
+
+      - name: online_order_flag
+        description: Verdadeiro se for um pedido online.
+
+      - name: taxa_mt
+        description: Metrica com a taxa mt da venda.
+
+      - name: subtotal
+        description: Metrica com o subtotal da venda.
+
+      - name: total_due
+        description: Metrica do total devido da venda.
+
+      - name: status_name
+        description: Descrição com o status da venda

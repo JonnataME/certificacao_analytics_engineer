@@ -1,0 +1,16 @@
+models:
+  - name: stg_erp__person
+    description: Tabela staging com os cadastros de pessoas.
+    columns:
+      - name: person_uid
+        description: Identificador único de pessoa.
+        data_tests: ['unique', 'not_null']
+
+      - name: person_id
+        description: Identificador natural da pessoa.
+
+      - name: person_type
+        description: Descrição do tipo de pessoa.
+
+      - name: person_name
+        description: Descrição com o nome da pessoa.

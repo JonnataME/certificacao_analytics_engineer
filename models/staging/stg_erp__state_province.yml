@@ -1,0 +1,22 @@
+models:
+  - name: stg_erp__state_province
+    description: Tabela staging com o cadastro de provincia/estado.
+    columns:
+      - name: state_province_uid
+        description: Identificador único da provincia/estado.
+        data_tests: ['unique', 'not_null']
+
+      - name: territory_uid
+        description: Identificador único do territorio.
+
+      - name: country_region_uid
+        description: Identificador único do pais.
+
+      - name: state_province_id
+        description: Identificador natural da provincia/estado.
+
+      - name: state_province_code
+        description: Descrição do codigo da provincia/estado.
+
+      - name: state_province_name
+        description: Descrição do nome da provincia/estado.

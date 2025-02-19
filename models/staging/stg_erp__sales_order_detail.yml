@@ -1,0 +1,25 @@
+models:
+  - name: stg_erp__sales_order_detail
+    description: Tabela staging com os detalhe do pedido de venda.
+    columns:
+      - name: sales_order_detail_uid
+        description: Identificador único do detalhe do pedido de venda.
+        data_tests: ['unique', 'not_null']
+
+      - name: sales_order_uid
+        description: Identificador único do pedido de venda.
+
+      - name: product_uid
+        description: Identificado único do produto.
+
+      - name: sales_order_detail_id
+        description: Identificador natural do detalhe do pedido de venda.
+
+      - name: order_qty
+        description: Metrica da quantidade do pedido.
+
+      - name: unit_price
+        description: Metrica com o preço unitario.
+
+      - name: unit_price_discount
+        description: Metrica com o preço unitario de desconto.

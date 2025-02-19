@@ -1,0 +1,16 @@
+models:
+  - name: stg_erp__product_subcategory
+    description: Tabela staging com as subcategorias do produto.
+    columns:
+      - name: product_subcategory_uid
+        description: Identificador único da subcategoria do produto.
+        data_tests: ['unique', 'not_null']
+
+      - name: product_category_uid
+        description: Identificador único da categoria do produto.
+
+      - name: product_subcategory_id
+        description: Identificador natural da subcategoria do produto.
+
+      - name: product_subcategory_name
+        description: Descrição com nome da subcategoria do produto.

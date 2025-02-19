@@ -1,0 +1,13 @@
+models:
+  - name: stg_erp__credit_card
+    description: Tabela staging com os cadastros do cartão de credito.
+    columns:
+      - name: credit_card_uid
+        description:  Identificador único do cartão de credito.
+        data_tests: ['unique', 'not_null']
+
+      - name: credit_card_id
+        description: Identificador natural do cartão de credito.
+
+      - name: card_type
+        description: Descrição tipo de cartão.

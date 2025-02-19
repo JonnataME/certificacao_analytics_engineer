@@ -1,0 +1,11 @@
+models:
+  - name: stg_erp__sales_order_header_sales_reason
+    description: Tabela staging com a assosiação de pedidos de vendas e os motivos de venda.
+    columns:
+      - name: sales_order_uid
+        description: Identificador único do pedido de venda.
+        data_tests: ['not_null']
+
+      - name: sales_reason_uid
+        description: Identificador único do motivo de venda.
+        data_tests: ['not_null']

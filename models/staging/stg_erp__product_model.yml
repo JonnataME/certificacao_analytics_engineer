@@ -1,0 +1,13 @@
+models:
+  - name: stg_erp__product_model
+    description: Tabela staging com os modelos de produto.
+    columns:
+      - name: product_model_uid
+        description: Identificador único do modelo de produto.
+        data_tests: ['unique', 'not_null']
+
+      - name: product_model_id
+        description: Identificador natural do modelo de produto.
+
+      - name: product_model_name
+        description: Descrição com o nome do modelo de produto.
