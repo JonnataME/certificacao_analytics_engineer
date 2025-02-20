@@ -24,8 +24,8 @@ models:
       columns: true
 
     staging:
-      +materialized: table
-      +schema: view
+      +materialized: view
+      +schema: stg
 
     marts:
       +materialized: table
